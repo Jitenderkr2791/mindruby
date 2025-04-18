@@ -26,13 +26,18 @@ public class BASECLASS
 			//logging mandatory line
 			log=LogManager.getLogger(this.getClass());
 			
+			FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\main\\resorces\\config.properties");
+			p = new Properties();
+		 	p.load(file);
+		 	System.out.println();
+			
 			driver=Driverclass.getDriver(br);
 			
-			driver.get("https://tutorialsninja.com/demo/");  //reading value from properties file. 
+			driver.get(p.getProperty("url"));  //reading value from properties file. 
 			
 	    }
 
-	    @AfterClass
+		@AfterClass
 	    public void closeDriver() 
 	    {
 	        Driverclass.quitDriver();
