@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="AprilMavenProject.AprilMavenProject.AlertHandling"/>
+      <class name="AprilMavenProject.AprilMavenProject.Frames"/>
+      <class name="AprilMavenProject.AprilMavenProject.authenticated_Popup"/>
+    </classes>
+  </test> 
+</suite>-->  
+
+<suite name="Suite">
+
+<listeners>
+<listener class-name="AprilMavenProject.AprilMavenProject.ExtentReportManager"></listener>
+</listeners>
+  
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="AprilMavenProject.AprilMavenProject.Assert2listeners"/>
+       <class name="AprilMavenProject.AprilMavenProject.AlertHandling"/>
+      <class name="AprilMavenProject.AprilMavenProject.Assertion"/>
+      <class name="AprilMavenProject.AprilMavenProject.windowhandle"/>
+      <class name="AprilMavenProject.AprilMavenProject.Webtable_static"/>
+      <class name="AprilMavenProject.AprilMavenProject.webtable_dynamic"/>
+      <class name="AprilMavenProject.AprilMavenProject.Mouse_hover"/>
+      <class name="AprilMavenProject.AprilMavenProject.keyboardaction"/>
+    </classes>
+  </test> 
+  
+</suite>

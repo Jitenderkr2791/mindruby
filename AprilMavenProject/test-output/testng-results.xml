@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="22" failed="4" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-16T13:35:54 IST" name="Suite" finished-at="2025-04-16T13:38:10 IST" duration-ms="135721">
+    <groups>
+    </groups>
+    <test started-at="2025-04-16T13:35:54 IST" name="Test" finished-at="2025-04-16T13:38:10 IST" duration-ms="135721">
+      <class name="AprilMavenProject.AprilMavenProject.Assert2listeners">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]" started-at="2025-04-16T13:35:55 IST" name="startDriver" finished-at="2025-04-16T13:35:59 IST" duration-ms="4001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="test1()[pri:0, instance:AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]" started-at="2025-04-16T13:35:59 IST" name="test1" finished-at="2025-04-16T13:36:00 IST" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]" started-at="2025-04-16T13:36:00 IST" name="test2" finished-at="2025-04-16T13:36:00 IST" duration-ms="24" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:230)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:240)
+at AprilMavenProject.AprilMavenProject.Assert2listeners.test2(Assert2listeners.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]" started-at="2025-04-16T13:36:00 IST" name="test3" finished-at="2025-04-16T13:36:00 IST" depends-on-methods="AprilMavenProject.AprilMavenProject.Assert2listeners.test2" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AprilMavenProject.AprilMavenProject.Assert2listeners.test3() on instance AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f depends on not successfully finished methods 
+[AprilMavenProject.AprilMavenProject.Assert2listeners.test2() on instance AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AprilMavenProject.AprilMavenProject.Assert2listeners.test3() on instance AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f depends on not successfully finished methods 
+[AprilMavenProject.AprilMavenProject.Assert2listeners.test2() on instance AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]" started-at="2025-04-16T13:36:00 IST" name="test4" finished-at="2025-04-16T13:36:00 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.Assert2listeners@6236eb5f]" started-at="2025-04-16T13:36:00 IST" name="closeDriver" finished-at="2025-04-16T13:36:00 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.Assert2listeners -->
+      <class name="AprilMavenProject.AprilMavenProject.Webtable_static">
+        <test-method is-config="true" signature="startdriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:36:42 IST" name="startdriver" finished-at="2025-04-16T13:36:47 IST" duration-ms="4301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startdriver -->
+        <test-method signature="staticwebtable()[pri:1, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:36:47 IST" name="staticwebtable" finished-at="2025-04-16T13:36:47 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticwebtable -->
+        <test-method signature="staticWebtable2()[pri:2, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:36:47 IST" name="staticWebtable2" finished-at="2025-04-16T13:36:48 IST" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticWebtable2 -->
+        <test-method signature="staticWebtable3()[pri:3, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:36:48 IST" name="staticWebtable3" finished-at="2025-04-16T13:37:48 IST" duration-ms="60775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticWebtable3 -->
+        <test-method signature="staticWebtable4()[pri:4, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:37:48 IST" name="staticWebtable4" finished-at="2025-04-16T13:37:48 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticWebtable4 -->
+        <test-method signature="staticWebtable5()[pri:5, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:37:48 IST" name="staticWebtable5" description="find total price of all books" finished-at="2025-04-16T13:37:49 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticWebtable5 -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.Webtable_static@3e96bacf]" started-at="2025-04-16T13:37:49 IST" name="closedriver" finished-at="2025-04-16T13:37:49 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.Webtable_static -->
+      <class name="AprilMavenProject.AprilMavenProject.windowhandle">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.windowhandle@3571b748]" started-at="2025-04-16T13:36:24 IST" name="getDriver" finished-at="2025-04-16T13:36:29 IST" duration-ms="4069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="windowhandle1()[pri:1, instance:AprilMavenProject.AprilMavenProject.windowhandle@3571b748]" started-at="2025-04-16T13:36:29 IST" name="windowhandle1" finished-at="2025-04-16T13:36:34 IST" duration-ms="5578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowhandle1 -->
+        <test-method signature="windowHandleApproach()[pri:2, instance:AprilMavenProject.AprilMavenProject.windowhandle@3571b748]" started-at="2025-04-16T13:36:34 IST" name="windowHandleApproach" finished-at="2025-04-16T13:36:37 IST" duration-ms="2957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowHandleApproach -->
+        <test-method signature="childwindow()[pri:3, instance:AprilMavenProject.AprilMavenProject.windowhandle@3571b748]" started-at="2025-04-16T13:36:37 IST" name="childwindow" finished-at="2025-04-16T13:36:42 IST" duration-ms="5055" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='OrangeHRM, Inc']"}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36d752d6931985f9d3b267770a1c6364, findElement {using=xpath, value=//a[text()='OrangeHRM, Inc']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\JITEND~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56110/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d752d6931985f9d3b267770a1c6364]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='OrangeHRM, Inc']"}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36d752d6931985f9d3b267770a1c6364, findElement {using=xpath, value=//a[text()='OrangeHRM, Inc']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\JITEND~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56110/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d752d6931985f9d3b267770a1c6364
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at AprilMavenProject.AprilMavenProject.windowhandle.childwindow(windowhandle.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- childwindow -->
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:AprilMavenProject.AprilMavenProject.windowhandle@3571b748]" started-at="2025-04-16T13:36:42 IST" name="closewindow" finished-at="2025-04-16T13:36:42 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closewindow -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.windowhandle -->
+      <class name="AprilMavenProject.AprilMavenProject.webtable_dynamic">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.webtable_dynamic@484970b0]" started-at="2025-04-16T13:37:49 IST" name="startDriver" finished-at="2025-04-16T13:37:50 IST" duration-ms="1556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="dynamic_Table()[pri:0, instance:AprilMavenProject.AprilMavenProject.webtable_dynamic@484970b0]" started-at="2025-04-16T13:37:50 IST" name="dynamic_Table" finished-at="2025-04-16T13:38:02 IST" duration-ms="11214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_Table -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.webtable_dynamic@484970b0]" started-at="2025-04-16T13:38:02 IST" name="closeDriver" finished-at="2025-04-16T13:38:02 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.webtable_dynamic -->
+      <class name="AprilMavenProject.AprilMavenProject.keyboardaction">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.keyboardaction@7c83dc97]" started-at="2025-04-16T13:38:05 IST" name="startDriver" finished-at="2025-04-16T13:38:06 IST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="newTabKeyBoardAction()[pri:0, instance:AprilMavenProject.AprilMavenProject.keyboardaction@7c83dc97]" started-at="2025-04-16T13:38:06 IST" name="newTabKeyBoardAction" finished-at="2025-04-16T13:38:10 IST" duration-ms="4235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabKeyBoardAction -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.keyboardaction@7c83dc97]" started-at="2025-04-16T13:38:10 IST" name="closedriver" finished-at="2025-04-16T13:38:10 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.keyboardaction -->
+      <class name="AprilMavenProject.AprilMavenProject.AlertHandling">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:00 IST" name="startDriver" finished-at="2025-04-16T13:36:04 IST" duration-ms="3726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="NormalAlert()[pri:1, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:04 IST" name="NormalAlert" finished-at="2025-04-16T13:36:09 IST" duration-ms="5108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NormalAlert -->
+        <test-method signature="NormalAlert2()[pri:2, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:09 IST" name="NormalAlert2" finished-at="2025-04-16T13:36:09 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NormalAlert2 -->
+        <test-method signature="confirmationAlert1()[pri:3, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:09 IST" name="confirmationAlert1" finished-at="2025-04-16T13:36:15 IST" duration-ms="6184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmationAlert1 -->
+        <test-method signature="confirmationAlert2()[pri:4, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:15 IST" name="confirmationAlert2" finished-at="2025-04-16T13:36:18 IST" duration-ms="3073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmationAlert2 -->
+        <test-method signature="promptAlert()[pri:5, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:18 IST" name="promptAlert" finished-at="2025-04-16T13:36:24 IST" duration-ms="6169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promptAlert -->
+        <test-method signature="promptAlertWithExplicitWait()[pri:6, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:24 IST" name="promptAlertWithExplicitWait" finished-at="2025-04-16T13:36:24 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promptAlertWithExplicitWait -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:AprilMavenProject.AprilMavenProject.AlertHandling@2b4bac49]" started-at="2025-04-16T13:36:24 IST" name="closebrowser" finished-at="2025-04-16T13:36:24 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.AlertHandling -->
+      <class name="AprilMavenProject.AprilMavenProject.Mouse_hover">
+        <test-method is-config="true" signature="wakeupDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.Mouse_hover@4470f8a6]" started-at="2025-04-16T13:38:02 IST" name="wakeupDriver" finished-at="2025-04-16T13:38:03 IST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wakeupDriver -->
+        <test-method signature="rightclick()[pri:6, instance:AprilMavenProject.AprilMavenProject.Mouse_hover@4470f8a6]" started-at="2025-04-16T13:38:03 IST" name="rightclick" finished-at="2025-04-16T13:38:05 IST" duration-ms="2122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rightclick -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:AprilMavenProject.AprilMavenProject.Mouse_hover@4470f8a6]" started-at="2025-04-16T13:38:05 IST" name="closeDriver" finished-at="2025-04-16T13:38:05 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.Mouse_hover -->
+      <class name="AprilMavenProject.AprilMavenProject.Assertion">
+        <test-method signature="hard_Assertion_false()[pri:1, instance:AprilMavenProject.AprilMavenProject.Assertion@fd07cbb]" started-at="2025-04-16T13:36:24 IST" name="hard_Assertion_false" description="This is Hard assertion" finished-at="2025-04-16T13:36:24 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at AprilMavenProject.AprilMavenProject.Assertion.hard_Assertion_false(Assertion.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hard_Assertion_false -->
+        <test-method signature="Soft_Assertion2_false()[pri:2, instance:AprilMavenProject.AprilMavenProject.Assertion@fd07cbb]" started-at="2025-04-16T13:36:24 IST" name="Soft_Assertion2_false" description="This is Soft assertion2 without sa.assertAll();" finished-at="2025-04-16T13:36:24 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Soft_Assertion2_false -->
+        <test-method signature="Soft_Assertion_false()[pri:3, instance:AprilMavenProject.AprilMavenProject.Assertion@fd07cbb]" started-at="2025-04-16T13:36:24 IST" name="Soft_Assertion_false" description="This is Soft assertion" finished-at="2025-04-16T13:36:24 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [2] but found [1]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at AprilMavenProject.AprilMavenProject.Assertion.Soft_Assertion_false(Assertion.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Soft_Assertion_false -->
+        <test-method signature="hard_AssertionTrue()[pri:4, instance:AprilMavenProject.AprilMavenProject.Assertion@fd07cbb]" started-at="2025-04-16T13:36:24 IST" name="hard_AssertionTrue" description="This is Hard assertion" finished-at="2025-04-16T13:36:24 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hard_AssertionTrue -->
+        <test-method signature="Soft_Assertion2True()[pri:5, instance:AprilMavenProject.AprilMavenProject.Assertion@fd07cbb]" started-at="2025-04-16T13:36:24 IST" name="Soft_Assertion2True" description="This is Soft assertion2 without sa.assertAll();" finished-at="2025-04-16T13:36:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Soft_Assertion2True -->
+        <test-method signature="Soft_AssertionTrue()[pri:6, instance:AprilMavenProject.AprilMavenProject.Assertion@fd07cbb]" started-at="2025-04-16T13:36:24 IST" name="Soft_AssertionTrue" description="This is Soft assertion" finished-at="2025-04-16T13:36:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Soft_AssertionTrue -->
+      </class> <!-- AprilMavenProject.AprilMavenProject.Assertion -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
