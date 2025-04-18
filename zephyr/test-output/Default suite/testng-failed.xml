@@ -5,9 +5,9 @@
     <classes>
       <class name="testCases.TC001_AccountRegistrationTest">
         <methods>
-          <include name="StartDriver"/>
+          <include name="startdriver"/>
           <include name="verify_account_Registrration"/>
-          <include name="teardown"/>
+          <include name="closeDriver"/>
         </methods>
       </class> <!-- testCases.TC001_AccountRegistrationTest -->
     </classes>

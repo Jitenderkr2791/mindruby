@@ -8,31 +8,46 @@ public class TC001_AccountRegistrationTest extends BASECLASS
 {	
 
 	@Test
-	public void verify_account_Registrration() throws Throwable
-	{
-		HomePage hp = new HomePage(driver);
+	public void verify_account_Registrration() 
+	{	log.info("========starting TC001_AccountRegistrationTest=======");   //log4j
+		
+		try
+		{
+			HomePage hp = new HomePage(driver);
+		
 		/*
 		 * WebDriverWait wb = new WebDriverWait(driver, Duration.ofSeconds(10));
 		 * wb.until(ExpectedConditions.elementToBeClickable(hp.clickMyAccount()));
 		 */
-		Thread.sleep(5000);
-		hp.clickMyRegister();
+		
+		log.info("=======clicked on My Account link");		//log4j
+		hp.clickMyAccount();
+		log.info("=======clicked on register link");		//log4j
+		hp.clickRegister();
 		
 		String password = randomAlphaNumeric();
 		
 		AccountRegistrationPage ac=new AccountRegistrationPage(driver);
+		log.info("providing Customer details.....");			//log4j
 		ac.setfirstName(RandomString().toUpperCase())
 		.setlastName(RandomString().toUpperCase())
 		.setemail(RandomString()+"@gmail.com")
 		.settelephone(Randomnumber())
-		.setcompanyname(RandomString())
-		.clickNewsletter()
+		.clickNewsletterRandomly()
 		.setpassword(password)
 		.setCnfPassword(password)
-		.clickregister();
+		.checkPrivacyPolicy()
+		.clickcontinue();
+		
+		log.info("validating expected message..");
 		String confirmmsgString = ac.confirmMsg();
-		Assert.assertEquals(confirmmsgString, "Your registration completed");
-	}
-
-	
+		Assert.assertEquals(confirmmsgString, "Congratulations! Your new account has been successfully created!");
+		
+		
+		  } catch(Exception e) { log.error("Test failed.."); log.debug("debug logs..");
+		  Assert.fail(); }
+		  log.info("=========finished TC001_AccountRegistrationTest ");
+		 
+		 
+	}	
 }

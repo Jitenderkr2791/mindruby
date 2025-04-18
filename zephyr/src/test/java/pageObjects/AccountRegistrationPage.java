@@ -1,6 +1,8 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.Random;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,42 +19,38 @@ public class AccountRegistrationPage extends BasePage
 	{
 		super(driver);
 	}
-	
 		//locators
-	@FindBy(id= "gender-male")
-	WebElement maleRadio;
-
-	@FindBy(id = "gender-female")
-	WebElement femaleRadio;
-	
-	@FindBy(xpath="//input[@name='FirstName']")
+	@FindBy(xpath="//input[@id='input-firstname']")
 	WebElement txtFirstname;
 	
-	@FindBy(xpath="//input[@name=\"LastName\"]")
+	@FindBy(xpath="//input[@id='input-lastname']")
 	WebElement txtLastname;
 	
-	@FindBy(xpath="//input[@name=\"Email\"]")
+	@FindBy(xpath="//input[@id='input-email']")
 	WebElement txtEmail;
 	
-	@FindBy(xpath="//input[@name=\"Telephone\"]")
+	@FindBy(xpath="//input[@id='input-telephone']")
 	WebElement txtTelephone;
 	
-	@FindBy(xpath="//input[@name=\"Company\"]")
-	WebElement txtCompanyName;
-	
-	@FindBy(xpath="//input[@id=\"Newsletter\"]")
-	WebElement chckbNewsLetter;
-	
-	@FindBy(xpath="//input[@name=\"Password\"]")
+	@FindBy(xpath="//input[@id='input-password']")
 	WebElement txtPassword;
 	
-	@FindBy(xpath="//input[@name=\"ConfirmPassword\"]")
+	@FindBy(xpath="//input[@id='input-confirm']")
 	WebElement txtConfirmpassword;
 	
-	@FindBy(xpath="//button[@id=\"register-button\"]")
-	WebElement btnRegister;
+	@FindBy(xpath="//input[@name='newsletter' and @value='1']")
+	WebElement rdoNewsLetterYes;
 	
-	@FindBy(xpath ="//div[text()='Your registration completed']")
+	@FindBy(xpath="//input[@name='newsletter' and @value='0']")
+	WebElement rdoNewsLetterNO;
+	
+	@FindBy(xpath="//input[@name='agree']")
+	WebElement chckbPrivacyPolicy;
+	
+	@FindBy(xpath="//input[@value='Continue']")
+	WebElement btnContinue;
+	
+	@FindBy(xpath ="//p[text()='Congratulations! Your new account has been successfully created!']")
 	WebElement confirmationMsg;
 	
 	
@@ -80,16 +78,20 @@ public class AccountRegistrationPage extends BasePage
 		txtTelephone.sendKeys(phone);
 		return this;
 	}
-	public AccountRegistrationPage setcompanyname(String Cpyname)
-	{
-		txtCompanyName.sendKeys(Cpyname);
-		return this;
-	}
 	
-	public AccountRegistrationPage clickNewsletter()
+	public AccountRegistrationPage clickNewsletterRandomly() 
 	{
-		chckbNewsLetter.click();
-		return this;
+	    Random rand = new Random();
+	    boolean selectYes = rand.nextBoolean(); // true or false randomly
+
+	    if (selectYes) {
+	        rdoNewsLetterYes.click();
+	        System.out.println("Randomly selected: Yes for Newsletter");
+	    } else {
+	        rdoNewsLetterNO.click();
+	        System.out.println("Randomly selected: No for Newsletter");
+	    }
+	    return this;
 	}
 	
 	public AccountRegistrationPage setpassword(String pwd)
@@ -104,9 +106,14 @@ public class AccountRegistrationPage extends BasePage
 		return this;
 	}
 	
-	public AccountRegistrationPage clickregister()
+	public AccountRegistrationPage checkPrivacyPolicy()
 	{
-		btnRegister.click();
+		chckbPrivacyPolicy.click();
+		return this;
+	}
+	public AccountRegistrationPage clickcontinue()
+	{
+		btnContinue.click();
 		
 		/*
 		 * sol 1 : btnContinue.submit();
