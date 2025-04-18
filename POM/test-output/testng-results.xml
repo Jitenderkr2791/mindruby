@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-16T17:31:25 IST" name="Default suite" finished-at="2025-04-16T17:31:31 IST" duration-ms="6614">
+    <groups>
+    </groups>
+    <test started-at="2025-04-16T17:31:25 IST" name="Default test" finished-at="2025-04-16T17:31:31 IST" duration-ms="6614">
+      <class name="PAGEFACTORYAPPROACH.loginTest">
+        <test-method is-config="true" signature="startdriver()[pri:0, instance:PAGEFACTORYAPPROACH.loginTest@385c9627]" started-at="2025-04-16T17:31:25 IST" name="startdriver" finished-at="2025-04-16T17:31:29 IST" duration-ms="4471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startdriver -->
+        <test-method signature="test1()[pri:0, instance:PAGEFACTORYAPPROACH.loginTest@385c9627]" started-at="2025-04-16T17:31:29 IST" name="test1" finished-at="2025-04-16T17:31:31 IST" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:PAGEFACTORYAPPROACH.loginTest@385c9627]" started-at="2025-04-16T17:31:31 IST" name="teardown" finished-at="2025-04-16T17:31:31 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- PAGEFACTORYAPPROACH.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
